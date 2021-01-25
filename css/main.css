@@ -24,6 +24,13 @@ body {
           align-items: center;
 }
 
+@media (min-width: 900px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+}
+
 .main-container {
   display: -ms-grid;
   display: grid;
@@ -35,6 +42,17 @@ body {
   height: 722px;
 }
 
+@media (min-width: 900px) {
+  .main-container {
+    width: 635px;
+    height: 475px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 .main-container .sub-container-1 {
   background-color: white;
   display: -webkit-box;
@@ -44,6 +62,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-1 {
+    grid-column: span 2;
+  }
 }
 
 .main-container .sub-container-1 h1 {
@@ -58,6 +82,17 @@ body {
   color: #2AB3B1;
 }
 
+@media (min-width: 900px) {
+  .main-container .sub-container-1 h1 {
+    height: 28px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+  }
+}
+
 .main-container .sub-container-1 h6 {
   height: 40px;
   margin-top: 24px;
@@ -68,6 +103,16 @@ body {
   line-height: 20px;
   letter-spacing: -0.1875px;
   color: #C0DF33;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-1 h6 {
+    height: 21px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 40px;
+    letter-spacing: -0.225px;
+  }
 }
 
 .main-container .sub-container-1 .information {
@@ -83,6 +128,17 @@ body {
   line-height: 26px;
   letter-spacing: -0.175px;
   color: #9AA7BE;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-1 .information {
+    height: 52px;
+    width: 555px;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+  }
 }
 
 .main-container .sub-container-2 {
@@ -107,6 +163,16 @@ body {
   color: #FFFFFF;
 }
 
+@media (min-width: 900px) {
+  .main-container .sub-container-2 h2 {
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.225px;
+  }
+}
+
 .main-container .sub-container-2 .price-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +187,12 @@ body {
   margin-top: 18px;
   width: 147px;
   height: 37px;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-2 .price-container {
+    margin-left: 40px;
+  }
 }
 
 .main-container .sub-container-2 .price-container .cost {
@@ -157,9 +229,17 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 162% */
   letter-spacing: -0.2px;
   color: #FFFFFF;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-2 .full-access {
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+  }
 }
 
 .main-container .sub-container-2 .boton {
@@ -177,6 +257,13 @@ body {
   color: #FFFFFF;
 }
 
+@media (min-width: 900px) {
+  .main-container .sub-container-2 .boton {
+    width: 237px;
+    margin-left: 40px;
+  }
+}
+
 .main-container .sub-container-2 .boton:hover {
   cursor: pointer;
 }
@@ -184,7 +271,7 @@ body {
 .main-container .sub-container-3 {
   background: #2AB3B1;
   mix-blend-mode: normal;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .main-container .sub-container-3 h3 {
@@ -199,9 +286,25 @@ body {
   color: #FFFFFF;
 }
 
+@media (min-width: 900px) {
+  .main-container .sub-container-3 h3 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 40px;
+    margin-left: 40px;
+    letter-spacing: -0.225px;
+  }
+}
+
 .main-container .sub-container-3 ul {
   margin-top: 18px;
   margin-left: 24px;
+}
+
+@media (min-width: 900px) {
+  .main-container .sub-container-3 ul {
+    margin-left: 40px;
+  }
 }
 
 .main-container .sub-container-3 ul li {
